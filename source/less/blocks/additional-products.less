@@ -1,0 +1,227 @@
+.additional-products {
+  margin-bottom: 35px;
+
+  @media @tablet {
+    margin-bottom: 76px;
+  }
+
+  @media @desktop {
+    margin-bottom: 86px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    right: 0;
+    left: 0;
+    height: 2px;
+    background-color: #68b738;
+    transform: translateY(17px);
+    z-index: -1;
+
+    @media @tablet {
+      transform: translateY(23px);
+    }
+  }
+}
+
+.additional-products__wrapper {
+  @media @desktop {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.additional-products__title {
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 35px;
+  padding-right: 22px;
+  padding-left: 20px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+  background-color: #ffffff;
+
+  @media @mobile-only {
+    transform: translateX(-20px);
+  }
+
+  @media @tablet {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 80px;
+    padding-right: 37px;
+    padding-left: 40px;
+  }
+
+  @media @desktop {
+    margin-left: -40px;
+  }
+}
+
+.additional-products__list {
+  .reset-table-styles();
+  margin-bottom: 35px;
+
+  @media @tablet {
+    margin-bottom: 70px;
+    border: 1px solid #ebebeb;
+  }
+
+  @media @desktop {
+    width: 895px;
+    margin-bottom: 0;
+    border: none;
+  }
+}
+
+.additional-products__item {
+  padding-top: 13px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #ebebeb;
+
+  &:first-child {
+    border-top: 1px solid #ebebeb;
+  }
+
+  @media @tablet {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+    row-gap: 25px;
+    padding: 28px 38px;
+  }
+
+  @media @desktop {
+    grid-template-columns: 1fr 290px 245px;
+    column-gap: 40px;
+    align-items: center;
+    padding: 15px 0 16px;
+  }
+}
+
+.additional-products__item-title {
+  margin: 0;
+  margin-bottom: 13px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #222222;
+  text-transform: uppercase;
+
+  @media @tablet {
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.additional-products__text {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 15px;
+  line-height: 14px;
+
+  @media @tablet {
+    justify-content: flex-end;
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media @desktop {
+    justify-content: space-between;
+  }
+}
+
+.additional-products__price {
+  @media @tablet {
+    margin-left: 50px;
+  }
+}
+
+.additional-products__button {
+  grid-column: span 2;
+
+  @media @desktop {
+    grid-column: auto;
+  }
+}
+
+.additional-products__promotion {
+  background: url("../img/background/bg-promotion.webp") no-repeat center;
+  background-size: cover;
+
+  @media @retina {
+    background-image: url("../img/background/bg-promotion@2x.webp");
+  }
+
+  @media @tablet {
+    background-image: url("../img/background/bg-promotion-tablet.webp");
+
+    @media @retina {
+      background-image: url("../img/background/bg-promotion-tablet@2x.webp");
+    }
+  }
+
+  @media @desktop {
+    display: flex;
+    width: 245px;
+    max-height: 289px;
+    background-image: url("../img/background/bg-promotion-desktop.webp");
+    background-size: cover;
+
+    @media @retina {
+      background-image: url("../img/background/bg-promotion-desktop@2x.webp");
+    }
+  }
+}
+
+.additional-products__promotion-inner {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  min-height: 290px;
+  background: rgba(104, 183, 56, 0.85) url("../img/icons/icon-present.svg") no-repeat center 59px;
+
+  @media @tablet {
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 200px;
+    padding-right: 124px;
+    background-size: 80px 83px;
+    background-position: 78px 57px;
+  }
+
+  @media @desktop {
+    justify-content: center;
+    width: 100%;
+    padding-right: 0;
+    padding-bottom: 42px;
+    background-position: 84px 56px;
+  }
+}
+
+.additional-products__promotion-text {
+  display: block;
+  width: 161px;
+  margin-bottom: 35px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+
+  @media @tablet {
+    margin: 0;
+  }
+
+  @media @desktop {
+    margin-top: auto;
+  }
+}

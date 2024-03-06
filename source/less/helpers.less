@@ -1,0 +1,68 @@
+.visually-hidden {
+  position: fixed;
+  right: 200vw;
+
+  //возможен следующий вариант визуального скрытия
+  // position: absolute;
+  // width: 1px;
+  // height: 1px;
+  // margin: -1px;
+  // border: 0;
+  // padding: 0;
+  // white-space: nowrap;
+  // clip-path: inset(100%);
+  // clip: rect(0 0 0 0);
+  // overflow: hidden;
+}
+
+.wrapper {
+  @media @desktop {
+    width: 1220px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.container {
+  margin-right: 20px;
+  margin-left: 20px;
+
+  @media @tablet {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+
+  @media @desktop {
+    width: 1220px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.mobile-hidden {
+  @media @mobile-only {
+    display: none;
+  }
+}
+
+.wo-mobile-hidden {
+  @media @tablet {
+    display: none;
+  }
+}
+
+.wo-desktop-hidden {
+  @media @mobile-tablet {
+    display: none;
+  }
+}
+
+.desktop-hidden {
+  @media @desktop {
+    display: none;
+  }
+}
+
+.hidden {
+  display: none;
+}
